@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="/i/3p/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+   <script src="/i/3p/jquery-ui.min.js" defer="defer"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link href="/i/c/nga_20170921.css" rel="stylesheet">
+  <script type="text/javascript" src="/i/js/colorbox-min.js" defer="defer"></script>
+
+    <link rel="canonical" href="https://garden.org/plants/group/roses/" />
+<link rel="search" href="https://garden.org/i/search/opensearch_plants.xml" type="application/opensearchdescription+xml" title="NGA Database search" />
+  <meta name="description" content="Plant care and collection of Roses at Garden.org, with informative growing guides and 25,058 images of 6,790 varieties listed.">
+
+    <meta name="msapplication-TileImage" content="/i/p/nga/nga_144.png">
+    <link rel="apple-touch-icon" href="/i/p/nga/nga_57.png"/>  
+    <link rel="apple-touch-icon" sizes="72x72" href="/i/p/nga/nga_72.png"/>  
+    <link rel="apple-touch-icon" sizes="114x114" href="/i/p/nga/nga_114.png"/>  
+  <title>Roses: Plant Care and Collection of Varieties - Garden.org</title><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+
+
+  $(document).ready(function() {
+
+    // No framing the site, please.
+    if(top!=self) {
+      top.location.replace(document.location);
+    }
+
+
+    // Make my boxes all the same height:
+    var heights = $(".matchheight").map(function() { return $(this).height(); }).get(),
+      maxHeight = Math.max.apply(null, heights);
+    $(".matchheight").height(maxHeight);
+
+    // ////////////////////////////////////////////
+    // The below forces the footer to stick to the bottom, if the page isn't tall enough.
+    var docHeight = $(window).height();
+    var footerHeight = $("#atpfooter").height();
+    var footerTop = $("#atpfooter").position().top + footerHeight;
+ 
+    if (footerTop < docHeight) {
+      $("#atpfooter").css("margin-top", -22+ (docHeight - footerTop) + "px");
+    }
+    // ////////////////////////////////////////////
+
+    // ////////////////////////////////////////////
+    // The below loads the system messages, mail, etc. into the modal.
+
+    var trigger = $("body").find('[data-toggle="modal"]');
+    trigger.click(function(e) {
+      e.preventDefault();
+      var theModal = $(this).attr("data-target");
+      var ngaview = $(this).attr("data-ngaview"); 
+      var thetitle = $(this).attr("title");
+
+      $(theModal).find(".modal-title").html(thetitle);
+
+      var uri = theModal.replace("#", "");
+
+      if (uri == "ModalNGAView") {
+        $.get("/apps/atpview/show/"+ngaview+"/", function(data) {
+          var modal = $(this);
+          $(theModal).find(".modal-body").html(data);
+        });
+
+      } else {
+        $.get("/i/ajax/modal/"+uri+".php", function(data) {
+          var modal = $(this);
+          $(theModal).find(".modal-body").html(data);
+        });
+      };
+
+    });
+
+    // ////////////////////////////////////////////
+    // Sticky Items in Sidebar:
+    var sidebar_offset = 0;
+    // Line below is to avoid top() if the element doesn't exist for whatever reason.
+    if ($("#sticky_sidebar").length) {
+      sidebar_offset = $("#sticky_sidebar").offset().top + 300;
+      if (sidebar_offset > 1000) { sidebar_offset = sidebar_offset+1200; }
+    }
+    $("#sticky_sidebar").affix({
+      offset: {
+        top: sidebar_offset
+      }
+    });
+    var $body   = $(document.body);
+    var navHeight = $(".navbar").outerHeight(true) + 10;
+    $body.scrollspy({
+      target: "#sticky_sidebar",
+      offset: navHeight
+    });
+    // / Sticky Items in Sidebar:
+
+
+  });
+
+ </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4809383-1', 'auto');
+</script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7276780576747069",
+    enable_page_level_ads: true
+  });
+</script></head>
+
+  <body>
+  <div class="modal fade" id="ModalMail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New and Unread Tree-Mails</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/i/icon/loading.gif">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="ModalNGAView" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+          <img src="/i/icon/loading.gif">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="ModalSysMsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New Messages from Garden.org</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/i/icon/loading.gif">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top" id="nganav1">
+  <div class="fluid-container">
+    <div class="navbar-header navbar-left pull-left">
+      <a href="/"><i class="fa fa-home fa-fw fa-1x fahomeicon"></i></a>
+    </div>
+    <div class="navbar-header navbar-right pull-right">
+      <ul class="nav pull-left">
+        
+      <li class="navbar-text pull-left"><a href="/users/join/"><i class="fa fa-user-plus"> </i> Signup</a></li>
+      <li class="navbar-text pull-left"><a href="/login.php"><i class="fa fa-sign-in"> </i> Login</a></li>
+
+      </ul>
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="visible-xs-block clearfix"></div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+      
+      <ul class="nav navbar-nav" id="nga_dropdowns">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learning Library <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/learn/">Learning Library Homepage</a></li>
+            <li><a href="/learn/library/plantguide/">Plant Care Guides</a></li>
+            <li><a href="/learn/library/foodguide/">Food Gardening Guides</a></li>
+            <li><a href="/learn/library/weeds/">Weed Library</a></li>
+            <li><a href="/learn/library/pests/">Pest Control Library</a></li>
+            <li><a href="/courseweb/">Garden Curricula</a></li>
+            <li><a href="/ideas/podcast/">Podcast</a></li>
+            <li><a href="/learn/videos/">Videos</a></li>
+            <li><a href="/nga/searchqa/">Questions and Answers</a></li>
+            <li><a href="/nga/dictionary/">Garden Dictionary</a></li>
+            <li><a href="/ediblelandscaping/">Edible Landscaping</a></li>
+            <li><a href="/urbangardening/">Urban Gardening</a></li>
+            <li><a href="/learn/articles/">Browse all articles</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plants Database <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/plants/">Plants Database</a></li>
+            <li><a href="/plants/search/text.php">Search by name</a></li>
+            <li><a href="/plants/search/advanced.php">Search by characteristics</a></li>
+            <li class="divider"></li>
+            <li><a href="/plants/multi/">Landscape Photos</a></li>
+            <li><a href="/apps/plant_photos/view/">See All New Database Photos</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools &amp; Apps <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/apps/">View All Apps</a></li>
+            <li><a href="/apps/calendar/">Vegetable Planting Calendar</a></li>
+            <li><a href="/apps/frost-dates/">Frost Dates Lookup</a></li>
+            <li><a href="/apps/swap/">Seed Swaps</a></li>
+            <li><a href="/lists/">Plant Lists</a></li>
+            <li><a href="/nga/calculators/">Gardening Calculators</a></li>
+            <li><a href="/greenpages/">Green Pages</a></li>
+            <li><a href="/nga/zipzone/">Zone Lookup</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <i class="fa fa-caret-down "></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/ideas/">Gardening News</a></li>
+            <li><a href="/forums/">Forums</a></li>
+            <li><a href="/blogs/">Blogs</a></li>
+            <li><a href="/apps/events/">Gardening Calendar of Events</a></li>
+            <li><a href="/frogs/">Gardening Knowledgebase</a></li> 
+            <li><a href="/frogs/ask/">Ask a Question</a></li>
+            <li><a href="/ideas/raffles/">Not-a-Raffle-Raffles</a></li>
+            <li><a href="/apps/photocontest/">Photo Contests</a></li>
+          </ul>
+        </li>
+      </ul>
+  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <style>
+    #row_ngalogo {
+      background-image: url("/pics/2012-12-05/Paul2032/75e3f2.jpg");
+    }
+  </style>
+
+  <div class="fluid-container">
+    <div class="col-xs-12" id="row_ngalogo">
+     
+
+     <a href="/"><img src="/i/p/nga/header/logo.png" width="154" height="150" alt="National Gardening Association Logo" class="nga_nav150"></a><a href="/plants/"><img src="/i/p/nga/header/plants.png" width="250" height="150" id="row_text" class="nga_nav150"></a><a href="/special/offers/newsletter_signup.php"><img src="/i/p/newsletter_signup.png" class="nl_signupbutton" style="border:1px solid black;"></a>
+
+    </div>
+  </div>
+<div class="container-fluid" id="ngabody"><div class="row" style="margin-bottom:5px;">
+          <div class="col-sm-8">
+            <h1 class="page-header">Roses: Plant Care and Collection of Varieties</h1>
+          </div>
+          <div class="col-sm-4 text-right">
+            <h2 class="page-header">
+<form class="form-inline" action="/plants/search/text/" method="get">
+  <div class="input-group">
+    <input type="text" class="form-control" name="q" placeholder="Search Plants">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+    </span>
+  </div>
+</form>
+</h2>
+          </div>
+          </div><div class="row"><div class="col-sm-12"><center><script>
+if ($(window).width() > 1024) {
+  document.write('<ins data-revive-zoneid="3" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+if ($(window).width() < 1025) {
+  document.write('<ins data-revive-zoneid="2" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+</script></center>  <style>
+    .ui-autocomplete-loading { background: white url('/i/ajax/articles/ui-anim_basic_16x16.gif') right center no-repeat; }
+    .ul_menu_item { font-size: 100%; }
+    .ui-autocomplete  { font-size: 100%; }
+    .ui-menu  { font-size: 100%; }
+    .ui-widget  { font-size: 100%; }
+    .ui-widget-content  { font-size: 100%; }
+    .ui-corner-all { font-size: 100%; }
+
+    .clickable_thumb { cursor:pointer; }
+
+  #plant_thumb img {
+    border: 1px solid black;
+  }
+
+
+  </style>
+
+<script>
+$(document).ready(function(){
+  $('.infos_clickmore').click(function(e) {
+    var infoid = $(this).attr('data-infoid');
+    e.preventDefault();
+    $('#showmore-'+infoid).slideDown();
+    $('#clickmore-'+infoid).hide();
+  });
+
+
+  function split(val) {
+    return val.split( /,\s*/ );
+  }
+  function extractLast( term ) {
+    return split( term ).pop();
+  }
+
+  $( "#cultivar_search" ).bind( "keydown", function( event ) {
+      if ( event.keyCode === $.ui.keyCode.TAB &&
+          $( this ).data( "autocomplete" ).menu.active ) {
+        event.preventDefault();
+      }
+    })
+    .autocomplete({
+      source: function( request, response ) {
+        $.getJSON( "/plants/search/ajax_text/?ppid=181506", {
+          term: extractLast( request.term )
+        }, response );
+      },
+      search: function() {
+        // custom minLength
+        var term = extractLast( this.value );
+        if ( term.length < 2 ) {
+          return false;
+        }
+      },
+      focus: function() {
+        // prevent value inserted on focus
+        return false;
+      },
+      select: function( event, ui ) {
+        window.location.href = "/plants/view/"+ui.item.value;
+        return false;
+      }
+    });
+});
+</script>
+<div class="panel panel-default "><div class="panel-body">We have 25,058 images of 6,790 roses in our Roses database. <a href="#_search_and_browse">Click here to browse or search the plants in this database.</a></div></div><P>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7">
+      <div class="panel panel-default "><div class="panel-body">Roses are shrubs with prickly stems, pinnate compound leaves, and ornamental flowers, usually fragrant. This standard definition conveys none of the charm that has inspired poets, painters, sculptors, architects, and designers for centuries. The rose may be the most prominent plant in the arts, decor, and symbolism.<br>
+<br>
+Roses have been cultivated for more than 5,000 years and are native only to the northern hemisphere: Europe, North America, East Asia, and the Middle East. They were grown as ornamental plants as far back as the 6th century BC in China. In Europe they were first grown for use in perfume and other cosmetics and as health aids, but their ornamental value was soon recognized and appreciated. <br>
+<br>
+Rose breeding began in Europe in the 17th century. Most of the OGRs (Old Garden Roses) of that time were once-blooming shrubs in shades of white, pink, or red. The introduction of more and more species roses and the China and Tea groups into breeding practices produced reblooming roses in every color but true blue, with blooms of various shapes and sizes, ultimately resulting in thousands of cultivars meeting every conceivable aesthetic preference.<p><span class="h4green">About roses</span><br>There is a rose for every garden situation and need, from climbers to adorn a trellis, to miniatures for containers, to long-stemmed types for bouquets. Because of this variety, it's important to choose carefully. If you are looking for the familiar rose bush, consider hybrid teas, floribundas, or shrub roses. Hybrid teas are tall, long-stemmed roses ideal for cutting. Floribundas are shorter and bloom more freely, setting clusters of blossoms rather than a single bloom on a stem. Both these require regular maintenance for optimum performance. Shrub roses (sometimes called landscape roses), on the other hand, require somewhat less attention, adapt more readily to a wider range of conditions, and offer more disease resistance.<p><span class="h4green">Growing Conditions</span><br>Ideally, roses should be grown in sunny and open locations, with good air circulation at the base of the plant, in rich and well-draining soil.  Some roses, notably the old ramblers and the modern hybrid musks, can tolerate some shade in any zone and may even prefer shade in the hottest zones.<br>
+<br>
+Roses require 1-2 inches of water a week to thrive.  In dry climates, this water has to be supplied by the gardener, and although overhead watering was once discouraged, it is the logical choice.  The water supplied by a gardener supplements rain, which falls from overhead.  Overhead watering keeps the foliage and blooms clean, retards powdery mildew, and repels some pests.<br>
+<p><span class="h4green">Special features of roses</span><br>Fragrant<br>
+
+<br>
+Good for cut flowers<p><span class="h4green">Ongoing Care</span><br>Apply a layer of compost under the shrub each spring, followed by a 2-inch layer of mulch to retain moisture and control weeds, keeping mulch a few inches away from the stems. Water plants during the summer if rainfall is less than 1 inch per week. Pruning techniques vary with the type of rose.<p><span class="h4green">Choosing a site to grow roses</span><br>Select a site with full sun and well-drained soil.<p><span class="h4green">Planting Instructions</span><br>Plant in early spring or fall, depending on your location. Space plants 2 to 3 feet apart, depending on the variety. Prepare the garden bed by using a garden fork or tiller to loosen the soil to a depth of 12 to 15 inches, then mix in a 2- to 4-inch layer of compost. In regions with cold (below 0F) winters, plant grafted roses so the graft union (which appears as a bulge near the base of the stem) is 1 to 2 inches below the soil line. In warm regions, the graft should be a few inches above the soil line.<br>
+<br>
+
+<br>
+
+<br>
+For container-grown plants, dig a hole twice the diameter of the pot the plant is in. Carefully remove the plant from its container and place it in the hole. Carefully fill in around the root ball and firm the soil gently. For bare-root roses, dig a hole 12 to 18 inches deep and wide. The hole should be large enough that all the roots can be spread out without touching the sides of the hole. Mound a cone of soil in the center of the hole. Trim off any broken roots, then place the rose in the hole, spreading the roots around the soil mound. Fill the hole half full with soil and water it well to settle the soil and eliminate air pockets. Let the water drain, then fill the remainder of hole with soil and water thoroughly.<p></div></div>
+      <div id="_search_and_browse" style="padding-top:55px; margin-top:-55px;"></div>
+
+      <div class="panel panel-default "><div class="panel-heading">Search and Browse Roses</div><div class="panel-body">
+<a href="/plants/browse/plants/children/181506/">&raquo; Browse the full list of roses</a> (<a href="/plants/browse/plants/recent/?ppid=181506">or see recent additions</a>)<p>
+<a href="/plants/group/roses/search/">&raquo; Search by characteristics (height, bloom color, etc)</a><P>
+<a href="/plants/view/181506/">&raquo; Access the generic roses entry</a><P>
+<a href="/apps/plant_photos/view/month/new/181506/">&raquo; Browse recent roses images</a><P>
+<a href="/plants/propose/infos/181506/">&raquo; Add or edit informational text about this plant</a><P>
+
+<form class="form-inline" action="/plants/search/text.php" method="get">
+  <input type="hidden" name="ppid" value="181506">
+  <div class="input-group">
+
+
+    <input type="text" class="form-control" class="searchInput" id="cultivar_search" name="q" placeholder="Search Roses">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+    </span>
+  </div>
+</form>
+</div></div>
+      </div>
+      <div class="col-sm-5">
+      
+  <link rel="stylesheet"  href="/i/lightslider/css/lightslider.min.css"/>
+  <script src="/i/lightslider/js/lightslider.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#image-gallery").lightSlider({
+        keyPress:true,
+        gallery:true,
+        item:1,
+        thumbItem:6,
+        slideMargin: 0,
+        speed:500,
+        auto:false,
+        loop:true,
+        onSliderLoad: function() {
+          $("#image-gallery").removeClass("cS-hidden");
+        }
+      });
+    });
+  </script>
+  <div style="width:100%">
+    <div class="item">
+      <div class="clearfix" style="max-width:100%;">
+        <ul id="image-gallery" class="gallery list-unstyled cS-hidden" style="list-style: none outside none; padding-left: 0; margin: 0;">
+          <li data-thumb="/pics/2017-05-30/zuzu/b92f8a-100.jpg"><a href="/plants/photo/447187/" onclick="ATP_View('db_photo-447187','Image');return false;"><img src="/pics/2017-05-30/zuzu/b92f8a.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-05-08/Fleur569/ca4554-100.jpg"><a href="/plants/photo/514639/" onclick="ATP_View('db_photo-514639','Image');return false;"><img src="/pics/2018-05-08/Fleur569/ca4554.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-12-09/dirtdorphins/51d77b-100.jpg"><a href="/plants/photo/476852/" onclick="ATP_View('db_photo-476852','Image');return false;"><img src="/pics/2017-12-09/dirtdorphins/51d77b.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-05-28/Calif_Sue/939415-100.jpg"><a href="/plants/photo/446558/" onclick="ATP_View('db_photo-446558','Image');return false;"><img src="/pics/2017-05-28/Calif_Sue/939415.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-05-07/Calif_Sue/19dc84-100.jpg"><a href="/plants/photo/442044/" onclick="ATP_View('db_photo-442044','Image');return false;"><img src="/pics/2017-05-07/Calif_Sue/19dc84.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-09-27/Fleur569/2bd0c2-100.jpg"><a href="/plants/photo/467508/" onclick="ATP_View('db_photo-467508','Image');return false;"><img src="/pics/2017-09-27/Fleur569/2bd0c2.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-05-01/cliftoncat/83ca87-100.jpg"><a href="/plants/photo/512106/" onclick="ATP_View('db_photo-512106','Image');return false;"><img src="/pics/2018-05-01/cliftoncat/83ca87.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-12-11/dirtdorphins/955ec2-100.jpg"><a href="/plants/photo/477066/" onclick="ATP_View('db_photo-477066','Image');return false;"><img src="/pics/2017-12-11/dirtdorphins/955ec2.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-05-11/dana/5b1456-100.jpg"><a href="/plants/photo/515412/" onclick="ATP_View('db_photo-515412','Image');return false;"><img src="/pics/2018-05-11/dana/5b1456.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-09-01/Eric_C/76c938-100.jpg"><a href="/plants/photo/464375/" onclick="ATP_View('db_photo-464375','Image');return false;"><img src="/pics/2017-09-01/Eric_C/76c938.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-04-07/lovemyhouse/246219-100.jpg"><a href="/plants/photo/503361/" onclick="ATP_View('db_photo-503361','Image');return false;"><img src="/pics/2018-04-07/lovemyhouse/246219.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-11-13/BarbandDave/3250fa-100.jpg"><a href="/plants/photo/473200/" onclick="ATP_View('db_photo-473200','Image');return false;"><img src="/pics/2017-11-13/BarbandDave/3250fa.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-04-26/HamiltonSquare/b5c72e-100.jpg"><a href="/plants/photo/510049/" onclick="ATP_View('db_photo-510049','Image');return false;"><img src="/pics/2018-04-26/HamiltonSquare/b5c72e.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-06-15/JanneA/e863b7-100.jpg"><a href="/plants/photo/450930/" onclick="ATP_View('db_photo-450930','Image');return false;"><img src="/pics/2017-06-15/JanneA/e863b7.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-02-19/manueldalmeida/1e747f-100.jpg"><a href="/plants/photo/487744/" onclick="ATP_View('db_photo-487744','Image');return false;"><img src="/pics/2018-02-19/manueldalmeida/1e747f.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-06-03/RoseBlush1/6a7e18-100.jpg"><a href="/plants/photo/448248/" onclick="ATP_View('db_photo-448248','Image');return false;"><img src="/pics/2017-06-03/RoseBlush1/6a7e18.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-06-13/csandt/5feaad-100.jpg"><a href="/plants/photo/450422/" onclick="ATP_View('db_photo-450422','Image');return false;"><img src="/pics/2017-06-13/csandt/5feaad.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-09-08/csandt/8c6f88-100.jpg"><a href="/plants/photo/464922/" onclick="ATP_View('db_photo-464922','Image');return false;"><img src="/pics/2017-09-08/csandt/8c6f88.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-04-20/plantladylin/7c30cb-100.jpg"><a href="/plants/photo/508139/" onclick="ATP_View('db_photo-508139','Image');return false;"><img src="/pics/2018-04-20/plantladylin/7c30cb.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2016-10-18/Rebekah/e5f6ad-100.jpg"><a href="/plants/photo/417007/" onclick="ATP_View('db_photo-417007','Image');return false;"><img src="/pics/2016-10-18/Rebekah/e5f6ad.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-05-06/jmorth/517a1c-100.jpg"><a href="/plants/photo/514264/" onclick="ATP_View('db_photo-514264','Image');return false;"><img src="/pics/2018-05-06/jmorth/517a1c.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-03-10/sunnyvalley/4455ff-100.jpg"><a href="/plants/photo/492680/" onclick="ATP_View('db_photo-492680','Image');return false;"><img src="/pics/2018-03-10/sunnyvalley/4455ff.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-09-10/Steve812/bfed82-100.jpg"><a href="/plants/photo/465129/" onclick="ATP_View('db_photo-465129','Image');return false;"><img src="/pics/2017-09-10/Steve812/bfed82.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-08-25/cliftoncat/c535e3-100.jpg"><a href="/plants/photo/463635/" onclick="ATP_View('db_photo-463635','Image');return false;"><img src="/pics/2017-08-25/cliftoncat/c535e3.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-05-23/Calif_Sue/b9d0bc-100.jpg"><a href="/plants/photo/445082/" onclick="ATP_View('db_photo-445082','Image');return false;"><img src="/pics/2017-05-23/Calif_Sue/b9d0bc.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-05-27/Eric_C/5347f7-100.jpg"><a href="/plants/photo/520153/" onclick="ATP_View('db_photo-520153','Image');return false;"><img src="/pics/2018-05-27/Eric_C/5347f7.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-06-25/sunnyvalley/a428ac-100.jpg"><a href="/plants/photo/453559/" onclick="ATP_View('db_photo-453559','Image');return false;"><img src="/pics/2017-06-25/sunnyvalley/a428ac.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-02-28/manueldalmeida/213a66-100.jpg"><a href="/plants/photo/489568/" onclick="ATP_View('db_photo-489568','Image');return false;"><img src="/pics/2018-02-28/manueldalmeida/213a66.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-10-03/Paul2032/5f81b3-100.jpg"><a href="/plants/photo/468105/" onclick="ATP_View('db_photo-468105','Image');return false;"><img src="/pics/2017-10-03/Paul2032/5f81b3.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-03-26/clcroses/51eaae-100.jpg"><a href="/plants/photo/435581/" onclick="ATP_View('db_photo-435581','Image');return false;"><img src="/pics/2017-03-26/clcroses/51eaae.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-05-13/Calif_Sue/e09bcb-100.jpg"><a href="/plants/photo/515994/" onclick="ATP_View('db_photo-515994','Image');return false;"><img src="/pics/2018-05-13/Calif_Sue/e09bcb.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-06-09/evermorelawnless/93e121-100.jpg"><a href="/plants/photo/449743/" onclick="ATP_View('db_photo-449743','Image');return false;"><img src="/pics/2017-06-09/evermorelawnless/93e121.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-10-25/MargieNY/4306de-100.jpg"><a href="/plants/photo/470983/" onclick="ATP_View('db_photo-470983','Image');return false;"><img src="/pics/2017-10-25/MargieNY/4306de.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-03-28/skylark/cd0028-100.jpg"><a href="/plants/photo/498765/" onclick="ATP_View('db_photo-498765','Image');return false;"><img src="/pics/2018-03-28/skylark/cd0028.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-08-04/Prosedda/7e921b-100.jpg"><a href="/plants/photo/460712/" onclick="ATP_View('db_photo-460712','Image');return false;"><img src="/pics/2017-08-04/Prosedda/7e921b.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2014-04-26/dave/99f177-100.jpg"><a href="/plants/photo/237061/" onclick="ATP_View('db_photo-237061','Image');return false;"><img src="/pics/2014-04-26/dave/99f177.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-10-20/Fleur569/724241-100.jpg"><a href="/plants/photo/470314/" onclick="ATP_View('db_photo-470314','Image');return false;"><img src="/pics/2017-10-20/Fleur569/724241.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-03-06/gemini_sage/da84b5-100.jpg"><a href="/plants/photo/491677/" onclick="ATP_View('db_photo-491677','Image');return false;"><img src="/pics/2018-03-06/gemini_sage/da84b5.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-02-17/manueldalmeida/6170f9-100.jpg"><a href="/plants/photo/487381/" onclick="ATP_View('db_photo-487381','Image');return false;"><img src="/pics/2018-02-17/manueldalmeida/6170f9.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-05-06/zuzu/3c851d-100.jpg"><a href="/plants/photo/441945/" onclick="ATP_View('db_photo-441945','Image');return false;"><img src="/pics/2017-05-06/zuzu/3c851d.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-11-09/BarbandDave/145ad7-100.jpg"><a href="/plants/photo/472618/" onclick="ATP_View('db_photo-472618','Image');return false;"><img src="/pics/2017-11-09/BarbandDave/145ad7.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-05-10/Calif_Sue/c8ba8c-100.jpg"><a href="/plants/photo/442858/" onclick="ATP_View('db_photo-442858','Image');return false;"><img src="/pics/2017-05-10/Calif_Sue/c8ba8c.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2018-05-22/Eric_C/4d1276-100.jpg"><a href="/plants/photo/518569/" onclick="ATP_View('db_photo-518569','Image');return false;"><img src="/pics/2018-05-22/Eric_C/4d1276.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-07-13/sunnyvalley/55360c-100.jpg"><a href="/plants/photo/457100/" onclick="ATP_View('db_photo-457100','Image');return false;"><img src="/pics/2017-07-13/sunnyvalley/55360c.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-07-18/cliftoncat/7a8250-100.jpg"><a href="/plants/photo/458061/" onclick="ATP_View('db_photo-458061','Image');return false;"><img src="/pics/2017-07-18/cliftoncat/7a8250.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-06-03/Paul2032/254e2d-100.jpg"><a href="/plants/photo/448159/" onclick="ATP_View('db_photo-448159','Image');return false;"><img src="/pics/2017-06-03/Paul2032/254e2d.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-11-02/Paul2032/3a8e8b-100.jpg"><a href="/plants/photo/471946/" onclick="ATP_View('db_photo-471946','Image');return false;"><img src="/pics/2017-11-02/Paul2032/3a8e8b.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-09-21/Montii/775139-100.jpg"><a href="/plants/photo/466130/" onclick="ATP_View('db_photo-466130','Image');return false;"><img src="/pics/2017-09-21/Montii/775139.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-04-30/Calif_Sue/c835eb-100.jpg"><a href="/plants/photo/440439/" onclick="ATP_View('db_photo-440439','Image');return false;"><img src="/pics/2017-04-30/Calif_Sue/c835eb.jpg" class="img-responsive" /></a></li>
+<li data-thumb="/pics/2017-02-08/HemNorth/dc72ca-100.jpg"><a href="/plants/photo/430625/" onclick="ATP_View('db_photo-430625','Image');return false;"><img src="/pics/2017-02-08/HemNorth/dc72ca.jpg" class="img-responsive" /></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+      <p><center>
+<!-- Garden.org 300x600 Right Side -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-7276780576747069"
+     data-ad-slot="4824019770"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<P>
+</center>
+      </div>
+    </div>
+  </div>
+  <p><center>  <!--
+  ~ Copyright (C) 2014 Media.net Advertising FZ-LLC All Rights Reserved
+  -->
+<script id="mNCC" language="javascript">
+    medianet_width = "1120";
+    medianet_height = "250";
+    medianet_crid = "572908758";
+    medianet_versionId = "111299";
+    (function() {
+        var isSSL = 'https:' == document.location.protocol;
+        var mnSrc = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/nmedianet.js?cid=8CU43E005' + (isSSL ? '&https=1' : '');
+        document.write('<scr' + 'ipt type="text/javascript" id="mNSC" src="' + mnSrc + '"></scr' + 'ipt>');
+    })();
+  </script></center><p></div></div><p><script>
+if ($(window).width() > 1024) {
+  document.write('<ins data-revive-zoneid="3" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+if ($(window).width() < 1025) {
+  document.write('<ins data-revive-zoneid="2" data-revive-id="311bdfe392f903548d741a903b5c48bb"></ins><scr'+'ipt async src="/rv/www/delivery/asyncjs.php"></scr'+'ipt>');
+}
+</script><p></div><div id="atpfooter"><div class="container-fluid">
+          <div class="col-sm-4">
+            <a href="/">Garden.org Homepage</a><BR>
+            <a href="/help/">Help using the site</a><BR>
+            <a href="/about/">About</a><BR>
+            <a href="/about/contact/">Contact</a><BR>
+            <a href="/about/tos/">Terms of Service</a><BR>
+            <a href="/about/privacy/">Privacy</a><BR>
+            <a href="/about/sponsors/">Corporate Sponsors</a><BR>
+            <a href="/users/memberlist/">Memberlist</a><BR>
+            <a href="/special/acorns/">Acorns</a><BR>
+            <a href="/about/links/">Links</a><BR>
+            <a href="/apps/ask/">Ask a Question</a><BR>
+            <a href="/newsletter/">Newsletter</a><BR>
+            
+    <p>&copy; 1972 - 2018 <a href="/">National Gardening Association</a><p>
+    Times are presented in US Central Standard Time<p>
+          </div>
+     <div class="col-sm-2 text-left">
+      <a href="https://www.pinterest.com/ngagrows/"><i class="fa fa-pinterest-square fa-fw fa-2x"></i>Pinterest</a><br>
+      <a href="https://www.facebook.com/Garden.Org/"><i class="fa fa-facebook-square fa-fw fa-2x"></i>Facebook</a><br>
+      <a href="https://www.youtube.com/user/nationalgardening"><i class="fa fa-youtube-square fa-fw fa-2x"></i>Youtube</a><br>
+      <a href="https://twitter.com/NatlGardening"><i class="fa fa-twitter-square fa-fw fa-2x"></i>Twitter</a><br>
+      <a href="https://www.instagram.com/nationalgardeningassoc/"><i class="fa fa-instagram fa-fw fa-2x"></i>Instagram</a><br>
+    </div><div class="col-sm-6 text-right"><p>Today's site banner is by <a href="/users/profile/Paul2032/">Paul2032</a> and is called "<a href="/thread/go/83881/">Petunia</a>"<p></div></div></div><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script type="text/javascript" src="/i/js/nga_20170818.js"></script>
+  <script>
+    ga('send', 'pageview');
+  </script>
+    </body></html>
